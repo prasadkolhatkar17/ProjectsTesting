@@ -2,7 +2,6 @@ from selenium import webdriver
 import unittest
 import time
 from Selenium_Automation_Amazon.Pages.HomePage import HomePage
-#from Selenium_Automation_Amazon.Pages.LoginPage import LoginPage
 from Selenium_Automation_Amazon.Pages.PostLogin import PostLogin
 from Selenium_Automation_Amazon.Pages.CasesCoversPage import CasesCoversPage
 
@@ -20,8 +19,6 @@ class CasesCovers(unittest.TestCase):
         # ******** Object created for individual Pages ***************** #
         driver = self.driver
         homepg = HomePage(driver)
-        loginpg = LoginPage(driver)
-        #logoutpg = Logout(driver)
         postloginpg = PostLogin(driver)
         casecoverpg = CasesCoversPage(driver)
 
